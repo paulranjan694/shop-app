@@ -15,13 +15,13 @@ import 'firebase/compat/auth';
 // };
 
 const config ={
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId:  process.env.REACT_APP_PROJECT_ID,
-    storageBucket:  process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId:  process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId:  process.env.REACT_APP_APP_ID,
-    measurementId:  process.env.REACT_APP_MESUREMENT_ID
+    apiKey: "AIzaSyAK7pxYHqK6jheDwVLs97USxB0qz0_3Z-Q",
+    authDomain: "shop-app-620fe.firebaseapp.com",
+    projectId: "shop-app-620fe",
+    storageBucket: "shop-app-620fe.appspot.com",
+    messagingSenderId: "157366671482",
+    appId: "1:157366671482:web:e0cf93293c67e09d61c3c3",
+    measurementId: "G-43TFWVXDB5"
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
