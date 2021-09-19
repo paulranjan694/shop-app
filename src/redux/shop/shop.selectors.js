@@ -10,13 +10,13 @@ export const selectShopCollections = createSelector(
 
 export const selectCollection = memoize((collectionUrlParam) =>
     createSelector([selectShopCollections], 
-    collections => collections[collectionUrlParam]
+    collections => (collections ? collections[collectionUrlParam] : null)
   )
 );
 
 export const selectCollectionsForPreview = createSelector(
   [selectShopCollections],
-  collections => Object.keys(collections).map(key => collections[key])
+  collections => collections ? Object.keys(collections).map(key => collections[key]) : []
 );
 
 /*selectCollection function we just wrote is not memoized due to collectionUrlParam being passed in from our collection component's mapStateToProps running whenever our state changes and and calling a new instance of our selectCollection function.
