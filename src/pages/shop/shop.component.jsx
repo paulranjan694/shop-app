@@ -4,7 +4,6 @@ import { Route } from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
 import CollectionOverview from '../../components/collection-overview/collection-overview.component'
 import WithSpinner from '../../components/with-spinner/with-spinner.component';
-import { convertCollectionsSnapshotToMap, firestore } from '../../firebase/firebase.utils';
 import { fetchCollectionStartAsync } from '../../redux/shop/shop.actions';
 import { selectIsCollectionFetching, selectIsCollectionsLoaded } from '../../redux/shop/shop.selectors';
 import CollectionPage from '../collection/collection.component';
