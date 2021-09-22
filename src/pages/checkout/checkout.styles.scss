@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: center;
     margin: 50px auto;
+
+    @media screen and (max-width: 800px) {
+      width: 92%;
+    }
     
 
     .checkout-header {
@@ -19,7 +23,8 @@
             width: 23%;
 
             &:last-child{
-                width: 8%;
+              width: 8%;
+
             }
         }
     }

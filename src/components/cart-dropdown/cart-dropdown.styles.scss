@@ -32,5 +32,12 @@
     button {
       margin-top: auto;
     }
+
+    @media screen and (max-width: 800px) {
+      width: 210px;
+      height: 335px;
+      top: 83px;
+      right: 17px;
+    }
   }
   
